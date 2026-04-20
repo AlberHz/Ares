@@ -24,7 +24,7 @@ def mostrar_dashboard(df_codigos, df_data):
         </style>
     """, unsafe_allow_html=True)
 
-    st.markdown("# 🛡️ Auditoría de Movimiento y Clasificación ABC")
+    st.markdown("Clasificación ABC")
     st.divider()
 
     # --- 1. PROCESAMIENTO TÉCNICO DE DATOS ---
@@ -98,7 +98,7 @@ def mostrar_dashboard(df_codigos, df_data):
 
     # --- 4. DESGLOSABLE DE ABC POR FAMILIA (ABC POR ROTACIÓN) ---
     st.markdown("## 🔍 Desglose de Movimiento por Familia")
-    st.info("💡 En este desglose, la clasificación ABC se calcula bajo el criterio de **Rotación**.")
+    st.info("💡 En este desglose, la clasificación ABC se calcula bajo el criterio de Rotación.")
     
     lista_familias = sorted(df['FAMILIA'].unique().tolist())
     
