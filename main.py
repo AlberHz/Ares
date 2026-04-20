@@ -8,7 +8,7 @@ import indicadores  # <--- IMPORTANTE
 
 # 1. CONFIGURACIÓN E INTERFAZ
 st.set_page_config(page_title="ARES PERÚ - DEMANDA", layout="wide")
-st.title("🛡️ PLANEACIÓN Y PREDICCÓN DE LA DEMANDA - MATERIA PRIMA")
+st.title("🛡️ PLANEACIÓN Y PREDICCiÓN DE MATERIA PRIMA")
 
 @st.cache_data(ttl=600)
 def load_and_process(file):
@@ -186,3 +186,4 @@ if uploaded_file:
     # --- AQUÍ DEBE IR LA LLAMADA, DENTRO DEL IF UPLOADED_FILE ---
     import indicadores 
     indicadores.mostrar_dashboard(df_codigos, df_data)
+
